@@ -14,3 +14,7 @@ Hoodie Brixyte mengusung desain yang kontemporer dengan detail yang menarik. Set
 
 **Tagline:**
 "Brixyte: Elevate Your Everyday Style"
+
+
+
+Brixyte – Memadukan "Brix" dengan akhiran "-yte" untuk kesan yang lebih trendy.
