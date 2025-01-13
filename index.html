@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brixite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-white font-sans m-0">
+    <!-- Header -->
+    <header id="header" class="bg-white text-black py-4 pb-2 fixed top-0 left-0 right-0 z-10 transition-all ease-in-out duration-300">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <img src="/name.png" alt="Reviva Logo" class="h-6 pointer-events-none select-none">
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="#" class="hover:text-[#0085FF]">Home</a>
+                <a href="#" class="hover:text-[#0085FF]">Shop</a>
+                <a href="#" class="hover:text-[#0085FF]">About</a>
+                <a href="#" class="bg-[#0085FF] text-white font-semibold py-2 px-5 rounded-md shadow-md hover:bg-[#005FCC] transition ease-in-out duration-300">
+                    Explore Now
+                </a>
+            </nav>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden flex items-center">
+                <button id="hamburger-btn" class="text-black focus:outline-none">
+                    <!-- Hamburger Icon -->
+                    <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <!-- Close Icon (Initially hidden) -->
+                    <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <nav class="space-y-4 px-6 py-4">
+                <a href="#" class="block hover:text-[#0085FF]">Home</a>
+                <a href="#" class="block hover:text-[#0085FF]">Shop</a>
+                <a href="#" class="block hover:text-[#0085FF]">About</a>
+                <a href="#" class="block bg-[#0085FF] text-white font-semibold py-2 px-5 rounded-md shadow-md hover:bg-[#005FCC] transition ease-in-out duration-300">
+                    Explore Now
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="relative bg-white text-black py-20 pt-20 min-h-screen">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-12 h-full mt-16"> <!-- Menambahkan margin atas di sini -->
+            <!-- Hero Image -->
+            <div class="md:w-1/2 mb-8 md:mb-0 h-full flex justify-center items-center">
+                <img src="/tagline.png" alt="Hero Side Image" class="rounded-lg w-full h-auto max-w-sm pointer-events-none select-none">
+            </div>
+            <!-- Hero Text -->
+            <div class="md:w-1/2 text-center md:text-left h-full flex justify-center md:justify-start items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">STEP BACK INTO STYLE</h2>
+                    <p class="text-lg mb-8">Made from luxurious material</p>
+                    <a href="#" class="bg-[#FFD700] text-black font-bold py-3 px-6 rounded-lg hover:bg-[#FFA500] shadow-lg transition ease-in-out duration-300">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Icon Box at the Bottom -->
+    <div
+        class="absolute bottom-0 w-full px-6 sm:px-12 md:px-20 py-8 bg-white text-black  border-t border-gray-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left Icon -->
+            <div class="flex flex-col items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-8 w-8 text-[#FFD700] mb-2">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"></path>
+                </svg>
+                <span>Feature 1</span>
+            </div>
+
+            <!-- Center Icon -->
+            <div class="flex flex-col items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-8 w-8 text-[#FFD700] mb-2">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"></path>
+                </svg>
+                <span>Feature 2</span>
+            </div>
+
+            <!-- Right Icon -->
+            <div class="flex flex-col items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="h-8 w-8 text-[#FFD700] mb-2">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"></path>
+                </svg>
+                <span>Feature 3</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <!-- Product Section -->
+    <section class="py-12 bg-[#3c3c3c] ">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-center mb-8 text-white">See What's New</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-4 px-4 sm:px-8 md:px-12">
+                <!-- Product Card -->
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden w-72 mx-auto">
+                    <img src="/org1.png" alt="Blake Bravado" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold">BLAKE BRAVADO</h4>
+                        <p class="text-sm text-gray-600">$120</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden w-72 mx-auto">
+                    <img src="/org2.png" alt="Solstice Silk" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold">SOLSTICE SILK</h4>
+                        <p class="text-sm text-gray-600">$130</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden w-72 mx-auto">
+                    <img src="/org3.png" alt="Phoenix Prestige" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-bold">PHOENIX PRESTIGE</h4>
+                        <p class="text-sm text-gray-600">$150</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- See More Button -->
+            <div class="mt-8 text-center">
+                <a href="#" class="bg-[#FFD700] text-black font-bold py-3 px-6 rounded-lg hover:bg-[#FFA500] shadow-lg transition ease-in-out duration-300">
+                    See More
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Offer Section -->
+    <section class="py-12 bg-blue-100">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-2xl font-bold mb-4 text-blue-700">25% OFF All Fashion Favorites - Limited Time!</h3>
+            <p class="text-lg mb-6">Don't miss out on our exclusive offers.</p>
+            <a href="#" class="bg-[#FFD700] text-black font-bold py-3 px-6 rounded-lg hover:bg-[#FFA500] shadow-lg transition ease-in-out duration-300">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>Subscribe to our newsletter for updates on our latest collections</p>
+            <form class="mt-4">
+                <input type="email" placeholder="Enter your email" class="py-2 px-4 rounded-l-lg">
+                <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-black py-2 px-4 rounded-r-lg">Subscribe</button>
+            </form>
+        </div>
+        <div class="text-center mt-6">
+            <p>&copy; 2025 Fiqih Badrian. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Get elements
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        // Toggle mobile menu
+        hamburgerBtn.addEventListener('click', () => {
+            // Toggle menu visibility
+            mobileMenu.classList.toggle('hidden');
+    
+            // Toggle icon visibility
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    
+        // Close the mobile menu if clicking outside (optional)
+        window.addEventListener('click', (e) => {
+            if (!hamburgerBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+
+        let lastScrollY = window.scrollY;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > lastScrollY) {
+            // Scrolling down, hide the header with a sliding effect
+            header.classList.add("transform", "-translate-y-full");
+        } else {
+            // Scrolling up, show the header with a sliding effect
+            header.classList.remove("transform", "-translate-y-full");
+        }
+        lastScrollY = window.scrollY;
+    });
+    </script>
+</body>
+</html>
